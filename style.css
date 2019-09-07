@@ -1,0 +1,76 @@
+body{
+	font-family: segoe ui light;
+	font-size: x-small;
+	padding: 0px;
+	margin: 0px;
+	background: rgba(0,0,0,.1);
+	display: flex;
+	flex-direction: row;
+}
+
+.logo{
+	padding: 24px 24px 24px 48px;
+}
+.body1{
+	width: 20%;
+	height: 100vh;
+	background: #eee;
+	background-color: #4D4D4D;
+	z-index: 20;
+}
+
+.nav-left{
+	color: #eee;
+	margin: auto;
+}
+
+.leftnavchild{
+	text-align: left;
+	padding: 24px 24px 24px 48px;
+	cursor: pointer;
+	font-size: 14px;
+	position: relative;
+}
+.active {
+	color: #FFB603;
+	background-color: rgba(225,225,225,.1);
+}
+.active::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: #FFB603;
+	width: 9px;
+}
+
+.leftnavchild:hover{	
+	background-color: rgba(225,225,225,.1);
+	border-left: 9px solid orange;
+}
+
+.bignav{
+	width:80%;
+	height: 100vh;	
+	text-align: right;
+	background-color: rgba(255,255,153,.2);
+}
+
+.headnav{
+	position: relative;
+	margin-bottom: 36px;
+}
+
+.headnav li{
+ 	display: inline-block;
+	 margin-right: 2%;
+}
+
+.mainbody{
+	padding: 10px;
+	left: 10px;
+	text-align: left;
+}
+
+
